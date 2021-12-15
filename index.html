@@ -10,6 +10,7 @@
 </head>
 <body onload="realtimeClock()">
     <!-- for weather -->
+
     <div class="container">
         <div class="notification"> </div>
         <div class="weather-container">
@@ -27,14 +28,12 @@
             </div>
         </div>
     </div>
+<div class="fullWrap">
        <!-- Display the time  -->
     <div class="main-container">
 
         <div id="clock"></div>
         
-        <!-- <div class="date">
-            <h2 id="date"><h2>
-        </div> -->
         <!-- Display the Greetings  -->
         <div class="greetings">
             <span id="greet"></span>
@@ -62,13 +61,19 @@
                 <h2 id="content"></h2>
             </div>
         </div>
-        <div class="qoutes">
-            <h2>"Magic is Believing in yourself.If you can make that happen,you can make anything happen."</h2> 
-            <!-- by: Johann Wolfgang Von Goethe -->
+         <!-- Display the qoute  -->
+        <div class="container1">
+            <h1 class="quote"></h1>
+            <hr>
+            <p class="author"></p>
+            <div class="buttons">
+                <button class="next">Next</button>
+            </div>
         </div>
     </div>
-   
+</div> 
 <!-- Display todo -->
+
 
 <div class="wrapper" id= "wrapper">
     <header>Todo List</header>
@@ -86,9 +91,9 @@
     </div>
   </div> 
   <div class="todo">
-      
       <h2 id="todo"><span><i class="fas fa-list"></i></span> Todo</h2>
   </div>
+  <script src="qoute.js"></script>
     <script src="todolist.js"></script>
     <script src="script.js"></script>
     <script src="storage.js"></script>

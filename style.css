@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
+
+:root {
+  --primary-color: #fff;
+
+}
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -33,6 +38,10 @@ html, body{
     overflow: hidden;
    
 }
+.fullWrap{
+  display: flex;
+  justify-content: center;
+}
 .date{
     /* color: #D4AF37; */
     /* text-align: center; */
@@ -40,7 +49,7 @@ html, body{
 }
 #clock{
     display: grid;
-    color:#000033;
+    color:var(--primary-color);
    font-size: 9vw;
    font-weight: bold;
    justify-content: center;
@@ -50,7 +59,7 @@ html, body{
 
 .greetings{
 
-    color: #000033;
+    color: var(--primary-color);
     text-align: center;
     font-size: 3vw;
     font-weight: bold;
@@ -93,7 +102,7 @@ button{
   cursor: pointer;
 }
 h2{
-    color: #000033;
+    color: var(--primary-color);
     text-align: center;
 }
 form{
@@ -105,7 +114,7 @@ form{
 form input{
     background: transparent;
     font-size: 2rem;
-    color: #000033;
+    color: var(--primary-color);
     text-align: center;
    
 }
@@ -113,7 +122,7 @@ form .no-outline{
     border-top-style: hidden;
     border-right-style: hidden;
     border-left-style: hidden;
-    border-bottom: 2px solid #000033;
+    border-bottom: 2px solid var(--primary-color);
     background-color: transparent;
 }
 form .button input{
@@ -136,7 +145,7 @@ form .button input:hover{
   right: 280px;
 }
 .qoutes h2{
-  color: #000033;
+  color: var(--primary-color);
   
 }
 .today .content{
@@ -158,6 +167,59 @@ font-weight: lighter;
 .todo h2:hover{
   color: #e74c3c;
 }
+/* qoute style  */
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  width: 600px;
+  background-color: rgba(60, 60, 60, 0.5);
+
+}
+.quote {
+  text-align: center;
+  font-style: italic;
+  color: var(--primary-color);
+  font-size: 1rem;
+}
+.author {
+  color: var(--secondary-color);
+  font-size: 20px;
+  font-size: 1rem;
+  color:var(--primary-color);
+}
+hr {
+  width: 60%;
+  border: 1px solid var(--primary-color);
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.buttons button {
+  cursor: pointer;
+  border: none;
+  color: var(--primary-color);
+  font-size: 20px;
+  font-weight: 700;
+}
+.buttons button:hover{
+    color: tomato;
+}
+
+button:focus {
+  outline: none;
+}
+
+.fa-twitter {
+  margin-right: 5px;
+}
 /* weather style */
 
 
@@ -165,28 +227,12 @@ font-weight: lighter;
   position: absolute;
   width: 300px;    
   background: transparent;
-  right: 2px;
+  right: 1px;
 }
-
-.app-title{
-  width: 300px;
-  height: 50px;
-  border-radius: 10px 10px 0 0;
-}
-
-.app-title p{
-  text-align: center;
-  padding: 15px;
-  margin: 0 auto;
-  font-size: 1.2em;
-  color:#fff;
-}
-
 .notification{
   background-color: #f8d7da;
   display: none;
 }
-
 .notification p{
   color: #721c24;
   font-size: 1.2em;
@@ -194,28 +240,23 @@ font-weight: lighter;
   text-align: center;
   padding: 10px 0;
 }
-
 .weather-container{
   width: 300px;
   height: 260px;
   background: transparent;
 }
-
 .weather-icon{
   width: 300px;
   height: 128px;
 }
-
 .weather-icon img{
   display: block;
   margin: 0 auto;
 }
-
 .temperature-value{
   width: 300px;
   height:60px;
 }
-
 .temperature-value p{
   padding: 0;
   margin: 0;
@@ -234,7 +275,6 @@ font-weight: lighter;
   text-align: center;
   font-size: 1.2em;
 }
-
 .location p{
   margin: 0;
   padding: 0;
@@ -242,12 +282,8 @@ font-weight: lighter;
   text-align: center;
   font-size: 0.8em;
 }
-
-
 /* todo style  */
-
-.wrapper{
-    
+.wrapper{  
     position: absolute;
     right: -500px;
     top: 25%;
@@ -257,33 +293,31 @@ font-weight: lighter;
     margin: 120px auto;
     padding: 25px;
     border-radius: 5px;
-    box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
-    
-
-  }
-  .wrapper header{
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+.wrapper header{
     font-size: 10px;
     text-align: center;
     font-weight: 600;
-  }
-  .wrapper #close{
+}
+.wrapper #close{
     position: absolute;
     right: 10px;
     top: 10px;
-  }
-  .wrapper #close i{
+}
+.wrapper #close i{
     color: #D4AF37;
-  }
-  .wrapper #close i:hover{
+}
+.wrapper #close i:hover{
     color: #e74c3c;
-  }
-  .wrapper .inputField{
+}
+.wrapper .inputField{
     margin: 20px 0;
     width: 100%;
     display: flex;
     height: 25px;
-  }
-  .inputField input{
+}
+.inputField input{
     width: 85%;
     height: 100%;
     outline: none;
@@ -292,11 +326,11 @@ font-weight: lighter;
     font-size: 10px;
     padding-left: 15px;
     transition: all 0.3s ease;
-  }
-  .inputField input:focus{
-    border-color: #000033;
-  }
-  .inputField button{
+}
+.inputField input:focus{
+    border-color: var(--primary-color);
+}
+.inputField button{
     width: 30px;
     height: 100%;
     border: none;
@@ -304,26 +338,26 @@ font-weight: lighter;
     margin-left: 5px;
     font-size: 21px;
     outline: none;
-    background: #000033;
+    background: #000333;
     cursor: pointer;
     border-radius: 3px;
     opacity: 0.6;
     pointer-events: none;
     transition: all 0.3s ease;
-  }
-  .inputField button:hover,
-  .footer button:hover{
-    background: #000033;
-  }
+}
+.inputField button:hover,
+.footer button:hover{
+    background: 000033;
+}
   .inputField button.active{
     opacity: 1;
     pointer-events: auto;
-  }
-  .wrapper .todoList{
+}
+.wrapper .todoList{
     max-height: 100px;
     overflow-y: auto;
-  }
-  .todoList li{
+}
+.todoList li{
     position: relative;
     list-style: none;
     margin-bottom: 2px;
@@ -334,8 +368,8 @@ font-weight: lighter;
     word-wrap: break-word;
     background: transparent;
     color: #fff;
-  }
-  .todoList li .icon{
+}
+.todoList li .icon{
     position: absolute;
     right: -65px;
     top: 50%;
@@ -348,25 +382,25 @@ font-weight: lighter;
     border-radius: 0 3px 3px 0;
     cursor: pointer;
     transition: all 0.2s ease;
-  }
-  .todoList li:hover{
-    color: #000033;
-  }
-  .todoList li:hover .icon{
+}
+.todoList li:hover{
+    color: var(--primary-color);
+}
+.todoList li:hover .icon{
     right: 0px;
-  }
-  .todoList li:hover .icon i:hover{
+}
+.todoList li:hover .icon i:hover{
     color: red;
-  }
-  .wrapper .footer{
+}
+.wrapper .footer{
     display: flex;
     width: 100%;
     margin-top: 20px;
     align-items: center;
     justify-content: space-between;
     color: #ccc;
-  }
-  .footer button{
+}
+.footer button{
     padding: 6px 10px;
     border-radius: 3px;
     border: none;
@@ -381,12 +415,12 @@ font-weight: lighter;
     opacity: 0.6;
     pointer-events: none;
     transition: all 0.3s ease;
-  }
-  .footer button.active{
+}
+.footer button.active{
     opacity: 1;
     pointer-events: auto;
-  }
-  .footer span{
+}
+.footer span{
     font-size: 10px;
-  }
+}
   

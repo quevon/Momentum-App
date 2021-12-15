@@ -7,7 +7,6 @@
 function setName(){
     const firstname = document.getElementById('first-name').value;
 
-
     localStorage.setItem("FIRSTNAME", firstname);
 }
 
@@ -48,7 +47,7 @@ function realtimeClock(){
     document.getElementById('clock').innerHTML =
         hours + " : " + minutes + " : " + seconds + " " + amPm;
     var t = setTimeout(realtimeClock, 500);
-    // document.getElementById('date').innerHTML = day + " / " + month + " / "  + date + " / "  +  year;
+
 
     if (hours <= "12" && amPm === "AM"){
         document.getElementById('greet').innerHTML = "Good Morning, " 
@@ -94,14 +93,6 @@ close.onclick =()=> {
   wrapper.style.right = "-250px";
   wrapper.style.transition = "all 1s ease";
 }
-
-// // When the user clicks anywhere outside of the modal, close it
-// window.onclick = function(event) {
-//   if (event.target == wrapper) {
-//     wrapper.style.display = "none";
-//   }
-// }
-
 
 
 // for editing name
