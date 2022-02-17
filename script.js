@@ -6,13 +6,15 @@
 // for name
 function setName(){
     const firstname = document.getElementById('first-name').value;
-
     localStorage.setItem("FIRSTNAME", firstname);
 }
 
 //for main focus today
 function setToday(){
-
+    const mainfocus1 = document.getElementById('focus-today').value;
+    localStorage.setItem("MAIN", mainfocus1);
+}
+function setToday1(){
     const mainfocus = document.getElementById('main-focus').value;
     localStorage.setItem("MAIN", mainfocus);
 }
