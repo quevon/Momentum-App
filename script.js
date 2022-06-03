@@ -61,6 +61,7 @@ function realtimeClock(){
         document.getElementById('greet').innerHTML = "Good AfterNoon, "
         document.body.style.background =" url(./images/bgafternoon.jpg) no-repeat" 
         document.body.style.backgroundSize = "cover"
+        document.querySelector('.quote').style.color = "white"
     }
     else if(hours <= "05" && amPm === "PM" ){
         document.getElementById('greet').innerHTML = "Good AfterNoon, "

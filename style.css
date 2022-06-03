@@ -165,14 +165,13 @@ font-weight: lighter;
   align-items: center;
   flex-direction: column;
 }
-.qoutes h2{
-  color: var(--primary-color);
+.qoutes h1{
+  /* color: #f1f1f1; */
+  font-size: 1rem;
 }
 .qoute {
   text-align: center;
   font-style: italic;
-  color: var(--primary-color);
-  font-size: 1rem;
 }
 .qoutes-container {
   display: flex;
