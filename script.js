@@ -3,7 +3,6 @@
 function setName(){
     const firstname = document.getElementById('first-name').value;
     localStorage.setItem("FIRSTNAME", firstname);
-    console.log('FIRSTNAME', firstname);
 }
 
 //for main focus today
@@ -96,14 +95,18 @@ close.onclick =()=> {
 
 
 // for editing name
-var name1 = document.getElementById('result-firstname');
+const name1 = document.getElementById('result-firstname');
+const firstname = localStorage.getItem('FIRSTNAME');
+const inputFirstname = document.getElementById('first-name'); 
 // Get the button that opens the modal
-var pen = document.getElementById("pen");
-var form = document.getElementById("form1")
-var close1 = document.getElementById("close1")
+const pen = document.getElementById("pen");
+const form = document.getElementById("form1")
+const close1 = document.getElementById("close1")
 
 pen.onclick = ()=> {
     form.style.display = "block";
+    inputFirstname.value = firstname;
+
 }
 close1.onclick = ()=> {
     form.style.display = "none";

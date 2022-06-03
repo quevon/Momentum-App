@@ -67,7 +67,7 @@ html, body{
   color: rgb(185, 33, 6);
 }
 .icon1 i{
-  font-size: 2rem;
+  font-size: 1.5rem;
   cursor: pointer;
   opacity: 0;
 }
@@ -125,7 +125,10 @@ form .button input:hover{
 #btnFocus{
   display: none;
 }
-
+form .fa-times-circle{
+  font-size: 1.5rem;
+  cursor: pointer;
+}
 .today .content{
     display: flex;
     justify-content: center;
