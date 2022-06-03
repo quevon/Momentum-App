@@ -11,7 +11,7 @@ const getQuote = async () => {
     const item = quotes[num];
     const quote = item.text;
     const author = item.author;
-    text.innerText = quote;
+    text.innerText = `" ${quote} "`;
     auth.innerText = author;
     if (author === null){
         auth.innerText = "Anonymous"

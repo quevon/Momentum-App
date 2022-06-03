@@ -155,9 +155,7 @@ font-weight: lighter;
   align-items: center;
   flex-direction: column;
 }
-.qoutes h1{
-  font-size: 1rem;
-}
+
 .qoutes-container {
   display: flex;
   flex-direction: column;
@@ -169,9 +167,11 @@ font-weight: lighter;
   border-radius: 10px;
   background-color: rgba(60, 60, 60, 0.5);
 }
-.qoute {
+.qoutes h1{
   text-align: center;
   font-style: italic;
+  font-size: 1rem;
+  color: var(--primary-color);
 }
 .author {
   color: var(--secondary-color);
