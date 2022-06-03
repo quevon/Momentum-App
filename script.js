@@ -1,12 +1,9 @@
 
-// var today = new Date();
-// var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds()
-// document.getElementById("demo").innerHTML = time;
-
 // for name
 function setName(){
     const firstname = document.getElementById('first-name').value;
     localStorage.setItem("FIRSTNAME", firstname);
+    console.log('FIRSTNAME', firstname);
 }
 
 //for main focus today

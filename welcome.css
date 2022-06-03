@@ -8,26 +8,21 @@ html, body{
     min-height: 100vh;
     object-fit: cover;
     align-items: center;
-    background: url(./images/naturebg.jpg) no-repeat;
+    background: url(./images/background.png) no-repeat;
     background-size: cover;
     background-position:center;
    
 }
 .container{
     position: fixed;
-
     top: 20%;
     left: 35%;
-    
-   
 }
 .logo{
     margin-top: 1rem;
     text-align: center;
 }
-
 .logo img{
-
     height: 6rem;
     border-radius: 50%;
     border: 3px solid #000033;
