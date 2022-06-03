@@ -28,5 +28,4 @@ function deleteTask2(){
     document.getElementById('focusToday').innerHTML = "What is your main focus Today?"
     form.style.display = "flex"
     form.style.alignItems = "center"
-
 }

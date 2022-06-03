@@ -138,16 +138,7 @@ form .button input:hover{
 #btnFocus{
   display: none;
 }
-.qoutes{
-  position: absolute;
-  font-size: 0.7rem;
-  bottom: 10px;
-  right: 280px;
-}
-.qoutes h2{
-  color: var(--primary-color);
-  
-}
+
 .today .content{
     display: flex;
     justify-content: center;
@@ -168,25 +159,33 @@ font-weight: lighter;
   color: #e74c3c;
 }
 /* qoute style  */
-
-.container1 {
+.qoutes{
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
-  border-radius: 10px;
-  width: 600px;
-  height: 180px;
-  background-color: rgba(60, 60, 60, 0.5);
-
+  flex-direction: column;
 }
-.quote {
+.qoutes h2{
+  color: var(--primary-color);
+}
+.qoute {
   text-align: center;
   font-style: italic;
   color: var(--primary-color);
   font-size: 1rem;
 }
+.qoutes-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  width: 600px;
+  height: 30%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  background-color: rgba(60, 60, 60, 0.5);
+}
+
 .author {
   color: var(--secondary-color);
   font-size: 20px;
