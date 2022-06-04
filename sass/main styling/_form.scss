@@ -1,0 +1,38 @@
+//form styling
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form {  
+    input{
+        background: transparent;
+        font-size: 2rem;
+        color: var(--primary-color);
+        text-align: center;
+    }
+    .no-outline{
+        border-top-style: hidden;
+        border-right-style: hidden;
+        border-left-style: hidden;
+        border-bottom: 2px solid var(--primary-color);
+        background-color: transparent;
+    }
+    .button{
+        input{
+            border: none;
+            cursor: pointer;
+        }
+        input:hover{
+            color: #fff;
+        }
+    }
+    .no-outline:focus {
+        outline: none;
+    }
+    .fa-times-circle{
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+}
